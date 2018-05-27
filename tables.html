@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 One Column Grid Layout for All Devices</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+   .customDiv{
+    margin:10px;
+    min-height:50px;
+    background-color:silver;
+    text-align:center;
+    font-size:large;
+    padding:10px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+
+        Normal Table:
+        <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Male</td>
+            <td>John@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mary</td>
+            <td>Femlae</td>
+            <td>mary@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ben</td>
+            <td>Male</td>
+            <td>Ben@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sara</td>
+            <td>Female</td>
+            <td>sara@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Sam</td>
+            <td>Male</td>
+            <td>sam@emailDomain.com</td>
+        </tr>
+    </tbody>
+</table>
+
+If we use table class:
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Male</td>
+            <td>John@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mary</td>
+            <td>Femlae</td>
+            <td>mary@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ben</td>
+            <td>Male</td>
+            <td>Ben@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sara</td>
+            <td>Female</td>
+            <td>sara@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Sam</td>
+            <td>Male</td>
+            <td>sam@emailDomain.com</td>
+        </tr>
+    </tbody>
+</table>
+If we use table class & table-bordered:
+<table class="table table-bordered ">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Male</td>
+            <td>John@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mary</td>
+            <td>Femlae</td>
+            <td>mary@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ben</td>
+            <td>Male</td>
+            <td>Ben@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sara</td>
+            <td>Female</td>
+            <td>sara@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Sam</td>
+            <td>Male</td>
+            <td>sam@emailDomain.com</td>
+        </tr>
+    </tbody>
+</table>
+
+
+If we use table class & table-striped:
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Male</td>
+            <td>John@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mary</td>
+            <td>Femlae</td>
+            <td>mary@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ben</td>
+            <td>Male</td>
+            <td>Ben@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sara</td>
+            <td>Female</td>
+            <td>sara@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Sam</td>
+            <td>Male</td>
+            <td>sam@emailDomain.com</td>
+        </tr>
+    </tbody>
+</table>
+
+
+If we use table class & table-responsive:
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Male</td>
+            <td>John@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mary</td>
+            <td>Femlae</td>
+            <td>mary@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ben</td>
+            <td>Male</td>
+            <td>Ben@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sara</td>
+            <td>Female</td>
+            <td>sara@emailDomain.com</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Sam</td>
+            <td>Male</td>
+            <td>sam@emailDomain.com</td>
+        </tr>
+    </tbody>
+</table>
+
+bootstrap contextual classes to colour the table rows
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active">
+                <td>1</td>
+                <td>John</td>
+                <td>Male</td>
+                <td>John@emailDomain.com</td>
+            </tr>
+            <tr class="danger">
+                <td>2</td>
+                <td>Mary</td>
+                <td>Femlae</td>
+                <td>mary@emailDomain.com</td>
+            </tr>
+            <tr class="info">
+                <td>3</td>
+                <td>Ben</td>
+                <td>Male</td>
+                <td>Ben@emailDomain.com</td>
+            </tr>
+            <tr class="success">
+                <td>4</td>
+                <td>Sara</td>
+                <td>Female</td>
+                <td>sara@emailDomain.com</td>
+            </tr>
+            <tr class="warning">
+                <td>5</td>
+                <td>Sam</td>
+                <td>Male</td>
+                <td>sam@emailDomain.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+    </div>
+</div>
+       
+    
+</body>
+</html> 

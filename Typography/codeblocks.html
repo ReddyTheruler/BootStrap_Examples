@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 One Column Grid Layout for All Devices</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+   .customDiv{
+    margin:10px;
+    min-height:50px;
+    background-color:silver;
+    text-align:center;
+    font-size:large;
+    padding:10px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+<p>
+    Keyboard shorcut for commenting code
+    <kbd>CTRL</kbd> <kbd>K</kbd> and <kbd>CTRL</kbd> <kbd>C</kbd>
+</p>
+
+<pre class="pre-scrollable">public class Program
+{
+    public static void Main()
+    {
+        Customer customer1 = new Customer()
+        {
+            ID = 101,
+            Name = "Mark",
+            Salary = 5000
+        };
+        Customer customer2 = new Customer()
+        {
+            ID = 102,
+            Name = "Pam",
+            Salary = 7000
+        };
+        Customer customer3 = new Customer()
+        {
+            ID = 104,
+            Name = "Rob",
+            Salary = 5500
+        };
+        Customer[] arrayCustomers = new Customer[2];
+        arrayCustomers[0] = customer1;
+        arrayCustomers[1] = customer2;
+       
+        List<customer> listCustomers = new List<customer>(2);
+        listCustomers.Add(customer1);
+        listCustomers.Add(customer2);
+        listCustomers.Add(customer3);
+        Customer cust = listCustomers[0];
+        Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                           cust.ID, cust.Name, cust.Salary);
+        Console.WriteLine("--------------------------------");
+       
+        for (int i = 0; i < listCustomers.Count; i++)
+        {
+            Customer customer = listCustomers[i];
+            Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                     customer.ID, customer.Name, customer.Salary);
+        }
+        Console.WriteLine("--------------------------------");
+       
+        foreach (Customer c in listCustomers)
+        {
+            Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                                c.ID, c.Name, c.Salary);
+        }
+        Console.WriteLine("--------------------------------");
+       
+        listCustomers.Insert(1, customer3);
+        Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+               listCustomers[1].ID, listCustomers[1].Name,
+               listCustomers[1].Salary);
+        Console.WriteLine("--------------------------------");
+       
+        Console.WriteLine("Index of Customer3 object in the List = "
+                           + listCustomers.IndexOf(customer3));
+        Console.WriteLine("--------------------------------");
+    }
+}</pre>
+
+
+
+<pre>&lt;strong&gt;Bold Text&lt;/strong&gt;
+&lt;u&gt;Underlined Text&lt;/u&gt;
+&lt;mark&gt;Highlighted Text&lt;/mark&gt;
+</pre>
+
+
+
+
+    </div>
+</div>
+       
+    
+</body>
+</html> 
